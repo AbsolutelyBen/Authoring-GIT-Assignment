@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*body{
+	postion:relative;
+}*/
+
+.bgNav{
+	background-color:black;
+}
+
+.nav{
+	font-family: "Courier New", Courier, monospace;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+h3{
+	font-family: "Courier New", Courier, monospace;
+	font-size:20px;
+	color:black;
+	font-weight:700;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:80px;
+	text-align:center;
+	border:1px solid;
+	color:#FFF;
+}
+
+h2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:40px;
+	color:black;
+
+}
+
+
+
+#livesrch{
+	position:absolute;
+	z-index: 1;
+	background-color:white;
+	padding:20px;
+	
+}
+
+#srch{
+	width: 200px;
+}
+
+
+
+.moviethumb{
+	width:30%;
+
+}
+
+.line{
+	display: inline;
+	
+}
+
+p{
+	font-family: "Courier New", Courier, monospace;
+	font-size:15px;
+	padding-top:10px;
+	/*text-align:center;*/
+}
+
+h6{
+	
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+	text-align:center;
+}
+
+img{
+	display:block;
+	margin:auto;
+}
+
+a{
+	color:blue;	
+}
+
+
+.details{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.top{
+	padding-top:80px;
+}
+
+.bottom{
+	padding-top:20px;
+}
+
+.shrinkImg{
+	width:70%;
+}
+
+footer{
+	border-top: 1px solid #000;	
+}
