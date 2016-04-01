@@ -11,7 +11,6 @@
 
 <body>
 
-<h3>tricia 004</h3>
 
 <?php include('includes/nav.html'); ?> <br><br>
     
