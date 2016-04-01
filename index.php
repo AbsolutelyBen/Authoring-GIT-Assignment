@@ -1,15 +1,17 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
-	<link href="css/foundation.css" rel="stylesheet" type="text/css">
-	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
+    <link href="css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
+<h2>Test 03</h2>
 
 <?php include('includes/nav.html'); ?> <br><br>
     
