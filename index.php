@@ -25,11 +25,7 @@
    		<div class="large-12 medium-12 small-12 columns">
         <div class="movies"></div> <!--empty container to be filled with movie filter-->
     </div> 
- </div>
-
-<div>
-<h2>lol k</h2>
-</div>  
+ </div>  
     
 <?php include('includes/footer.html'); ?>
 
