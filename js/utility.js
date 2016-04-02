@@ -24,7 +24,6 @@
 
 		}else{
 			request = new ActiveXObject("Microsoft.XMLHTTP");
-
 		}
 
 		request.open("GET", url, true);
@@ -35,8 +34,8 @@
 		}else{
 			request.onreadystatechange = addItems;
 		}
-		
 	}
+
 
 	function addItems() { // Purpose of this function is to write the content into the page, this is not used for live search.
 		//populate the full ist on the page
@@ -56,7 +55,7 @@
 			for (var i=0;i<items.length; i++) {
 				//add classes for styling
 				
-				build = '<div class="large-3 medium-4 small-12 columns">';
+				build = '<div class="build-div large-3 medium-4 columns">';
 				build += '<h6>'+items[i].movies_title+'</h6>';
 				build += '<img src="images/'+items[i].movies_thumb+'" alt="'+items[i].movies_title +'">';
 				build += '<p>'+items[i].movies_year+'</p>';
@@ -72,21 +71,20 @@
 				movieLinks[j].addEventListener("click", itemDetails, false);
 			}
 
-
 			}else{
-                    details.innerHTML = "";
-                    for(var k=0; k<items.length; k++) {
+	      details.innerHTML = "";
+	      for(var k=0; k<items.length; k++) {
 
-                    	build += '<div class="row">';
-                        build = '<div class="large-4 medium-6 small-12 line columns">'+'<img src="images/'+items[k].movies_fimg+'" alt="'+items[k].movies_title+'">'+'</div>';
-                        build += '<h2>'+items[k].movies_title+'</h2>';
-                        build += '<p>'+items[k].movies_year+'</p>';
-                        build += '<div class="large-8 medium-6 small-12 line columns">'+'<p>'+items[k].movies_storyline+'</p></div><br>';
-						build += '<a href="index.php">'+'<p>Close</p>'+'</a>';
-                        build += '</div>';
-                        details.innerHTML += build;
-                    }
-                }
+	      	build += '<div class="row">';
+	          build = '<div class="large-4 medium-6 small-12 line columns">'+'<img src="images/'+items[k].movies_fimg+'" alt="'+items[k].movies_title+'">'+'</div>';
+	          build += '<h2>'+items[k].movies_title+'</h2>';
+	          build += '<p>'+items[k].movies_year+'</p>';
+	          build += '<div class="large-8 medium-6 small-12 line columns">'+'<p>'+items[k].movies_storyline+'</p></div><br>';
+	build += '<a href="index.php">'+'<p>Close</p>'+'</a>';
+	          build += '</div>';
+	          details.innerHTML += build;
+	      }
+			}
 			
 		}else{
 			//error no content

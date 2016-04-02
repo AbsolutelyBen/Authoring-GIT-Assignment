@@ -3,6 +3,10 @@
 
 .bgNav{
 	background-color:black;
+		padding-bottom:10px;
+}
+
+.filterNav{
 }
 
 .nav{
@@ -19,7 +23,7 @@
 }
 
 h3{
-	font-family: "Courier New", Courier, monospace;
+	font-family:"Courier New", Courier, monospace;
 	font-size:20px;
 	color:black;
 	font-weight:700;
@@ -27,8 +31,8 @@ h3{
 	padding-bottom:30px;
 }
 
-h1 {
-	font-family: 'Open Sans Condensed', sans-serif;
+h1{
+	font-family:'Open Sans Condensed', sans-serif;
 	font-size:80px;
 	text-align:center;
 	border:1px solid;
@@ -36,20 +40,17 @@ h1 {
 }
 
 h2{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family:'Open Sans Condensed', sans-serif;
 	font-size:40px;
 	color:black;
 
 }
-
-
 
 #livesrch{
 	position:absolute;
 	z-index: 1;
 	background-color:white;
 	padding:20px;
-	
 }
 
 #srch{
@@ -58,23 +59,24 @@ h2{
 
 .moviethumb{
 	width:30%;
-
 }
 
 .line{
 	display: inline;
-	
+}
+
+.build-div{
+	text-align:center;
+	margin:0 auto;
 }
 
 p{
-	font-family: "Courier New", Courier, monospace;
+	font-family:"Courier New", Courier, monospace;
 	font-size:15px;
 	padding-top:10px;
-	/*text-align:center;*/
 }
 
 h6{
-	
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:20px;
 	text-align:center;
