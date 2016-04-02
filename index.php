@@ -11,8 +11,6 @@
 
 <body>
 
-<h2>Test 03</h2>
-
 <?php include('includes/nav.html'); ?> <br><br>
     
     <div class="row">
@@ -29,6 +27,9 @@
     </div> 
  </div>
 
+<div>
+<h2>lol k</h2>
+</div>  
     
 <?php include('includes/footer.html'); ?>
 
