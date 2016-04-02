@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
-	<link href="css/foundation.css" rel="stylesheet" type="text/css">
-	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
+    <link href="css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
 </head>
@@ -26,8 +26,7 @@
    		<div class="large-12 medium-12 small-12 columns">
         <div class="movies"></div> <!--empty container to be filled with movie filter-->
     </div> 
- </div>
-
+ </div>  
     
 <?php include('includes/footer.html'); ?>
 
