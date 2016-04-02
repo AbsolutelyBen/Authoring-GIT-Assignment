@@ -28,7 +28,7 @@
  </div>
 
 <div>
-<h2>lol k hopefully this works! -007ben</h2>
+<h2>lol k</h2>
 </div>  
     
 <?php include('includes/footer.html'); ?>
