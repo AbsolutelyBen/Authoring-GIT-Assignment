@@ -26,17 +26,6 @@
 
 /*-----GALLERY------*/
 
-.gallery-socialIcons{
-  float:right;
-  padding-top:1%;
-  margin-right:0;
-}
-
-.gallery-socialIcons li{
-  list-style-type: none;
-  display:inline;
-}
-
 .halfHeight{
     height: 50vh;
     padding-bottom: 6px;
