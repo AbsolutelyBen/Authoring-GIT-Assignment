@@ -24,7 +24,7 @@
     
  	<div class="row">
    		<div class="large-12 medium-12 small-12 columns">
-        <div class="movies"></div> <!--empty container to be filled with movie filter-->
+        <div class="movies"></div> 
     </div> 
  </div>  
     
