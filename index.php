@@ -11,7 +11,6 @@
 
 <body>
 
-
 <?php include('includes/nav.html'); ?> <br><br>
     
     <div class="row">
@@ -25,12 +24,9 @@
  	<div class="row">
    		<div class="columns"></div>
         <div class="movies"></div> 
-    </div> 
- </div>  
+    </div>  
     
 <?php include('includes/footer.html'); ?>
-
-
 
 <script src="js/utility.js"></script>
 <script src="js/foundation.js"></script>

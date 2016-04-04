@@ -6,7 +6,6 @@
 .row.full {
   width: 85%;
   max-width: 85%;
-  /*overflow:hidden;*/
 }
 .row.full>.column:first-child,
 .row.full>.columns:first-child { padding-left: 1em; }
