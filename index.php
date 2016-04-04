@@ -15,15 +15,15 @@
 <?php include('includes/nav.html'); ?> <br><br>
     
     <div class="row">
-    	<div class="large-4 large-push-8 medium-4 medium-push-8 small-12 columns" id="livesrch"></div><!--The empty <div> like the one shown in facebook that fills with the data from php and JSON-->
+    	<div class="large-4 large-push-8 medium-4 medium-push-8 columns" id="livesrch"></div><!--The empty <div> like the one shown in facebook that fills with the data from php and JSON-->
     </div>
 
     <div class="row">
-	    <div class="large-12 medium-12 small-12 columns details"></div>
+	    <div class="columns details"></div>
 	</div>
     
  	<div class="row">
-   		<div class="large-12 medium-12 small-12 columns">
+   		<div class="columns"></div>
         <div class="movies"></div> 
     </div> 
  </div>  
