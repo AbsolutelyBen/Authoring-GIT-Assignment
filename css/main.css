@@ -68,6 +68,11 @@
 .filterNav{
 }
 
+.newNav{
+  text-align: center;
+
+}
+
 .nav{
   font-family: "Courier New", Courier, monospace;
   font-size:20px;
@@ -115,6 +120,7 @@ h2{
 
 #srch{
   width:100%;
+  margin:0 auto;
 }
 
 .moviethumb{
