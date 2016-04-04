@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 /*GLOBAL CSS*/
 
 .row.full {
@@ -18,24 +17,9 @@
     margin-bottom:1em;
 }
 
-/*GLOBAL END*/
-
 
 
 /*GALLERY*/
-
-/*-----GALLERY------*/
-
-.gallery-socialIcons{
-  float:right;
-  padding-top:1%;
-  margin-right:0;
-}
-
-.gallery-socialIcons li{
-  list-style-type: none;
-  display:inline;
-}
 
 .halfHeight{
     height: 50vh;
@@ -46,7 +30,6 @@
     height:100vh;
     padding-bottom: 6px;
 }
-
 
 
 .twoThirdHeight{
@@ -74,15 +57,21 @@
 
 
 
-/*GALLERY END*/
+
+/*THE REST*/
 
 
 .bgNav{
   background-color:black;
-    padding-bottom:10px;
+  padding-bottom:10px;
 }
 
 .filterNav{
+}
+
+.newNav{
+  text-align: center;
+
 }
 
 .nav{
@@ -119,6 +108,7 @@ h2{
   font-family:'Open Sans Condensed', sans-serif;
   font-size:40px;
   color:black;
+  text-align:center;
 
 }
 
