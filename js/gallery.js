@@ -1,4 +1,8 @@
-var PhotoViewerPlugin = (function( document, pv ) {
+// Javascript
+// initial idea from the following URL (as the assignment is based around GIT, not code itself)
+// http://www.cssscript.com/vanilla-javascript-library-for-photo-gallery-lightbox-photoviewerjs/
+
+var PhotoViewerPlugin = (function(document, pv) {
 
   // Public Properties
   
@@ -14,20 +18,20 @@ var PhotoViewerPlugin = (function( document, pv ) {
   var posterGallery;
   var posterViewer; //var PhotoViewer;
 
-  var posterSliderTitle;
+  var pvCloseUpTitle;
   var PhotoViewerClose;
 
-  var PhotoViewerCurrentImageContainer;
-  var PhotoViewerCurrentImage;
+  var pvCurrentImgContainer;
+  var pvCurrentIMG;
 
-  var PhotoViewerPreviousImage;
+  var pvPrev;
   var PhotoViewerNextImage;
   var PhotoViewerCount;
 
   // Public Methods
  
-  pv.Initialize = function (className) {
-    if ( arguments.length < 1 ) {
+  pv.Initialize = function (className){
+    if (arguments.length < 1){
       ClassName = "photo";
     }
     else {
@@ -39,26 +43,24 @@ var PhotoViewerPlugin = (function( document, pv ) {
 
     PhotoViewerClose.addEventListener('click', ClosePhotoViewer);
     PhotoViewerNextImage.addEventListener('click', LoadNextImage);
-    PhotoViewerPreviousImage.addEventListener('click', LoadPreviousImage);
+    pvPrev.addEventListener('click', LoadPreviousImage);
   }
 
   // Private Methods
 
   var Init = function () {
-
-
     images = [];
 
     posterGallery = document.getElementsByClassName(ClassName);
     posterViewer = document.getElementById("posterViewer");
 
-    posterSliderTitle = document.getElementById("posterSliderTitle");
+    pvCloseUpTitle = document.getElementById("pvCloseUpTitle");
     PhotoViewerClose = document.getElementById("PhotoViewerClose");
 
-    PhotoViewerCurrentImageContainer  = document.getElementById("PhotoViewerCurrentImageContainer");
-    PhotoViewerCurrentImage = document.getElementById("PhotoViewerCurrentImage");
+    pvCurrentImgContainer  = document.getElementById("pvCurrentImgContainer");
+    pvCurrentIMG = document.getElementById("pvCurrentIMG");
 
-    PhotoViewerPreviousImage = document.getElementById("PhotoViewerPreviousImage");
+    pvPrev = document.getElementById("pvPrev");
     PhotoViewerNextImage = document.getElementById("PhotoViewerNextImage");
     PhotoViewerCount = document.getElementById("PhotoViewerCount");
   }
@@ -76,7 +78,6 @@ var PhotoViewerPlugin = (function( document, pv ) {
         }
         images.push(image);
       }
-
     }
   }
 
@@ -103,14 +104,14 @@ var PhotoViewerPlugin = (function( document, pv ) {
   }
 
   var SetPhotoViewerPhoto = function (currentImage) {
-    PhotoViewerCurrentImageContainer.className  = PHOTO_VIEWER_IMAGE_CLASS;
+    pvCurrentImgContainer.className  = PHOTO_VIEWER_IMAGE_CLASS;
 
     setTimeout(function(){
-        PhotoViewerCurrentImage.setAttribute('src', currentImage.imageSrc);
-        posterSliderTitle.innerHTML = currentImage.imageTitle;
+        pvCurrentIMG.setAttribute('src', currentImage.imageSrc);
+        pvCloseUpTitle.innerHTML = currentImage.imageTitle;
         PhotoViewerCount.innerHTML = currentImage.imageIndex + 1 + '/' + images.length;
         currentLoadedImage = currentImage.imageIndex;
-        PhotoViewerCurrentImageContainer.className = PHOTO_VIEWER_IMAGE_CLASS + " " + PHOTO_VIEWER_LOADED_CLASS;
+        pvCurrentImgContainer.className = PHOTO_VIEWER_IMAGE_CLASS + " " + PHOTO_VIEWER_LOADED_CLASS;
     }, pv.AnimationTime)
   }
 
@@ -147,15 +148,14 @@ var PhotoViewerPlugin = (function( document, pv ) {
     if (currentLoadedImage <= 0) {
       return;
     }
-
     SetPhotoViewerPhoto(images[currentLoadedImage - 1]);
   }
 
   // CONSTANTS
  
-  var PHOTO_VIEWER_VISIBLE = " photo-viewer--visible";
+  var PHOTO_VIEWER_VISIBLE = " pvVisible";
   var PHOTO_VIEWER = "photo-viewer";
-  var PHOTO_VIEWER_IMAGE_CLASS = "photo-viewer--current-image";
+  var PHOTO_VIEWER_IMAGE_CLASS = "currentIMG";
   var PHOTO_VIEWER_LOADED_CLASS = "loaded";
 
   return pv;

@@ -4,10 +4,8 @@
 	<title>New Realses</title>
     <!-- CSS -->
   <link  href="css/main.css" rel="stylesheet" type="text/css" media="screen">
-  
   <!-- JavaScript -->
   <script src="js/gallery.js"></script>
-
 </head>
 <body>
 
@@ -28,26 +26,26 @@
   <div class="galleryImages">
     <a href="images/zoolander.jpg" class="photo" title="Zoolander No.2"><img src="images/zoolander.jpg" alt="Image 5" title="Image 5 Description"></a>
   </div>
-  </div>
 </div>
+
 
 <!-- This is where the gallery will appear -->
 
 <div id="posterViewer" class="photo-viewer">
-  <header class="photo-viewer--title">
-    <h1 id="posterSliderTitle">Image Title</h1>
-    <div id="PhotoViewerClose" class="photo-viewer--close"><a href="#">X</a></div>
+  <header class="pvTitle">
+    <h1 id="sliderTitle">Image Title</h1>
+    <div id="pvCloseUp" class="photo-viewer--close"><a href="#">X</a></div>
   </header>
-  <div class="photo-viewer--container">
-    <div class="photo-viewer--current-image" id="PhotoViewerCurrentImageContainer">
-      <img id="PhotoViewerCurrentImage" src="">
+  <div class="pvContainer">
+    <div class="currentIMG" id="pvCurrentImgContainer">
+      <img id="pvCurrentIMG" src="">
     </div>
   </div>
-  <div class="photo-viewer--controls">
-      <div id="PhotoViewerPreviousImage" class="photo-viewer--previous-image"><a href="#">&laquo; Previous</a></div>
-      <div id="PhotoViewerCount" class="photo-viewer--count">1/10</div>
-      <div id="PhotoViewerNextImage" class="photo-viewer--next-image"><a href="#">Next &raquo;</a></div>
-    </div>
+  <div class="pvControls">
+    <div id="pvPrev" class="pvPrev"><a href="#">&laquo; Previous</a></div>
+    <div id="PhotoViewerCount" class="pvCount">1/10</div>
+    <div id="PhotoViewerNextImage" class="pvNext"><a href="#">Next &raquo;</a></div>
+  </div>
 </div>
 
 </body>
