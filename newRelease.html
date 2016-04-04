@@ -3,66 +3,147 @@
 <head>
 	<title>New Realses</title>
     <!-- CSS -->
+  <link rel="stylesheet" href="css/foundation.css" type="text/css" media="screen"/>
   <link  href="css/main.css" rel="stylesheet" type="text/css" media="screen">
   <!-- JavaScript -->
   <script src="js/gallery.js"></script>
 </head>
 <body>
 
-<!-- This is the poster gallery on New release page 'flex box'--> 
-
-<div id="posterGallery" class="movie-poster">
-  <div class="galleryImages">
-    <a href="images/revenant.jpg" class="photo" title="Revenant"><img src="images/revenant.jpg" alt="Revenant" title="Revenant"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/joy.jpg" class="photo" title="Joy"><img src="images/joy.jpg" alt="Joy" title="Joy"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/kungfu.jpg" class="photo" title="Kung Fu Panda 2"><img src="images/kungfu.jpg" alt="Kung Fu Panda" title="Kung Fu Panda"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/x-men.jpg" class="photo" title="X-Men: Apocalypse"><img src="images/x-men.jpg" alt="X-Men: Apocalypse" title="X-Men: Apocalypse"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/zoolander.jpg" class="photo" title="Zoolander No.2"><img src="images/zoolander.jpg" alt="Image 5" title="Zoolander No.2"></a></div>
-
-   <div class="galleryImages">
-    <a href="images/junglebook.jpg" class="photo" title="Jungle Book"><img src="images/junglebook.jpg" alt="Jungle Book" title="Jungle Book"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/hunstmen.jpg" class="photo" title="The Hunstmen"><img src="images/hunstmen.jpg" alt="The Hunstmen" title="The Hunstmen"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/deadpool.jpg" class="photo" title="Dead Pool"><img src="images/deadpool.jpg" alt="Dead Pool" title="Dead Pool"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/cloverfeild.jpg" class="photo" title="10 Cloverfeild Lane"><img src="images/cloverfeild.jpg" alt="10 Cloverfeild Lane" title="10 Cloverfeild Lane"></a></div>
-
-  <div class="galleryImages">
-    <a href="images/broklyn.jpg" class="photo" title="Brooklyn"><img src="images/broklyn.jpg" alt="Brooklyn" title="Brooklyn"></a></div>
-  </div>
-</div>
 
 
-<!-- This is where the gallery will appear -->
-
-<div id="posterViewer" class="photo-viewer">
-  <header class="pvTitle">
-    <h1 id="sliderTitle">Image Title</h1>
-    <div id="pvCloseUp" class="photo-viewer--close"><a href="#">X</a></div>
-  </header>
-  <div class="pvContainer">
-    <div class="currentIMG" id="pvCurrentImgContainer">
-      <img id="pvCurrentIMG" src="">
+<div class="row full">
+  <div class="galleryContainer centerness"> <!-- images for the gallery -->
+    <div class="small-12 medium-12 large-4 column">
+      <a href="#" data-reveal-id="imageModal1"><img src="images/gallery/revenant.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal2"><img src="images/gallery/joy.jpg" class="columnContain twoThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal3"><img src="images/gallery/kungfu.jpg" class="columnContain oneThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal4"><img src="images/gallery/x-men.jpg" class="columnContain twoThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal5"><img src="images/gallery/zoolander.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal6"><img src="images/gallery/junglebook.jpg" class="columnContain oneThirdHeight"></a>
     </div>
+    <div class="small-12 medium-12 large-4 column">
+      <a href="#" data-reveal-id="imageModal7"><img src="images/gallery/hunstmen.jpg" class="columnContain twoThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal8"><img src="images/gallery/deadpool.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal9"><img src="images/gallery/cloverfeild.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal10"><img src="images/gallery/broklyn.jpg" class="columnContain oneThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal11"><img src="images/gallery/puppy.jpg" class="columnContain fullHeight"></a>
+    </div>
+    <div class="small-12 medium-12 large-4 column"></a>
+      <a href="#" data-reveal-id="imageModal12"><img src="images/gallery/ct-27.jpg" class="columnContain oneThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal13"><img src="images/gallery/ct-20.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal14"><img src="images/gallery/amandachicken.jpg" class="columnContain twoThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal15"><img src="images/gallery/ct-16.jpg" class="columnContain halfHeight"></a>
+      <a href="#" data-reveal-id="imageModal16"><img src="images/gallery/lettertools.jpg" class="columnContain oneThirdHeight"></a>
+      <a href="#" data-reveal-id="imageModal17"><img src="images/gallery/necklacechains.jpg" class="columnContain twoThirdHeight"></a>
+    </div>
+  </div> <!-- end gallery -->
+</div>
+
+<div class="row full">
+  <!-- REVEAL MODAL - MAKING THE IMAGES POP UP -->
+  <div id="imageModal1" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/revenant.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
   </div>
-  <div class="pvControls">
-    <div id="pvPrev" class="pvPrev"><a href="#">&laquo; Previous</a></div>
-    <div id="PhotoViewerCount" class="pvCount">1/10</div>
-    <div id="PhotoViewerNextImage" class="pvNext"><a href="#">Next &raquo;</a></div>
+  <div id="imageModal2" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/joy.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal3" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/kungfu.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal4" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/x-men.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal5" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/zoolander.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal6" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/metalstrips.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal7" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-30.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal8" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-11.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal9" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-22.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal10" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-26.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal11" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/puppy.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal12" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-27.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal13" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-20.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal14" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/amandachicken.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal15" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/ct-16.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal16" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/lettertools.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <div id="imageModal17" class="reveal-modal large" data-reveal>
+    <img src="images/gallery/necklacechains.jpg" class="revealImageSize">
+    <a href="#" class="close-reveal-modal exitModalButton">x</a>
+  </div>
+  <!-- end reveal modal -->
+  
+  <div class="row"><!--Begin social media section-->
+  <div class="small-12 medium-12 large-12 columns">
+    <ul class="gallery-socialIcons"> 
+      <li>
+        <a href="https://www.facebook.com/MainStreetCreations/" target="_blank">  
+        <img class="social-icon" src="images/gallery/facebook.png" alt="social icon1"></a>
+      </li>
+      <li>
+        <a href="https://instagram.com/christinatischler/"> 
+        <img class="social-icon" src="images/gallery/insta.png" alt="social icon2"></a>
+      </li>
+      <li>
+        <a href="http://christinatischler.com/blog/"> 
+        <img class="social-icon" src="images/gallery/blog.png" alt="social icon2"></a>
+      </li>
+    </ul>
   </div>
 </div>
+  
+</div>
+
+
+
+</body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/foundation/foundation.reveal.js"></script>
+<script src="js/gallery.js"></script>
+
+<script>
+    $(document).foundation();
+  </script>
 
 </body>
 </html>
