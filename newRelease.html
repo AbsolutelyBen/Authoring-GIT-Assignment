@@ -2,27 +2,52 @@
 <html>
 <head>
 	<title>New Realses</title>
-	<link  href="css/gallery.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- CSS -->
+  <link  href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+  
+  <!-- JavaScript -->
+  <script src="js/gallery.js"></script>
+
 </head>
 <body>
 
-<div id="posterGallery" class="gallery">
-  <div class="galleryImage">
-    <a href="images/revenant.jpg" class="poster" title="The Revenant"><img src="images/revenant.jpg" alt="Revenant" title="Revenant"></a>
+<!-- This is the poster gallery on New release page 'flex box'--> 
+<div id="posterGallery" class="movie-poster">
+  <div class="galleryImages">
+    <a href="images/revenant.jpg" class="photo" title="Revenant"><img src="images/revenant.jpg" alt="Revenant" title="Revenant"></a>
   </div>
-  <div class="galleryImage">
-    <a href="images/joy.jpg" class="poster" title="Joy"><img src="images/joy.jpg" alt="Joy" title="Joy"></a>
+  <div class="galleryImages">
+    <a href="images/joy.jpg" class="photo" title="Joy"><img src="images/joy.jpg" alt="Joy" title="Joy"></a>
   </div>
-  <div class="galleryImage">
-    <a href="images/kungfu.jpg" class="poster" title="Kung Fu Panda"><img src="images/kungfu.jpg" alt="Kung Fu Panda" title="Kung Fu Panda"></a>
+  <div class="galleryImages">
+    <a href="images/kungfu.jpg" class="photo" title="Kung Fu Panda 2"><img src="images/kungfu.jpg" alt="Kung Fu Panda" title="Kung Fu Panda"></a>
   </div>
-  <div class="galleryImage">
-    <a href="images/x-men.jpg" class="poster" title="X-men Apocalypse"><img src="images/x-men.jpg" alt="X-men Apocalypse" title="X-men Apocalypse"></a>
+  <div class="galleryImages">
+    <a href="images/x-men.jpg" class="photo" title="X-Men: Apocalypse"><img src="images/x-men.jpg" alt="X-Men: Apocalypse" title="X-Men: Apocalypse"></a>
   </div>
-  <div class="galleryImage">
-    <a href="images/zoolander.jpg" class="poster" title="Zoolander 2"><img src="images/zoolander.jpg" alt="Zoolander 2" title="Zoolander 2"></a>
+  <div class="galleryImages">
+    <a href="images/zoolander.jpg" class="photo" title="Zoolander No.2"><img src="images/zoolander.jpg" alt="Image 5" title="Image 5 Description"></a>
   </div>
   </div>
+</div>
+
+<!-- This is where the gallery will appear -->
+
+<div id="posterViewer" class="photo-viewer">
+  <header class="photo-viewer--title">
+    <h1 id="posterSliderTitle">Image Title</h1>
+    <div id="PhotoViewerClose" class="photo-viewer--close"><a href="#">X</a></div>
+  </header>
+  <div class="photo-viewer--container">
+    <div class="photo-viewer--current-image" id="PhotoViewerCurrentImageContainer">
+      <img id="PhotoViewerCurrentImage" src="">
+    </div>
+  </div>
+  <div class="photo-viewer--controls">
+      <div id="PhotoViewerPreviousImage" class="photo-viewer--previous-image"><a href="#">&laquo; Previous</a></div>
+      <div id="PhotoViewerCount" class="photo-viewer--count">1/10</div>
+      <div id="PhotoViewerNextImage" class="photo-viewer--next-image"><a href="#">Next &raquo;</a></div>
+    </div>
 </div>
 
 </body>
