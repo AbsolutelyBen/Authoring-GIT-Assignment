@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 /*GLOBAL CSS*/
 
 .row.full {
@@ -18,7 +17,6 @@
     margin-bottom:1em;
 }
 
-/*GLOBAL END*/
 
 
 /*GALLERY*/
@@ -59,7 +57,8 @@
 
 
 
-/*GALLERY END*/
+
+/*THE REST*/
 
 
 .bgNav{
@@ -104,6 +103,7 @@ h2{
   font-family:'Open Sans Condensed', sans-serif;
   font-size:40px;
   color:black;
+  text-align:center;
 
 }
 

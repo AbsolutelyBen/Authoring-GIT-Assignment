@@ -1,12 +1,12 @@
 <?php
 	// Set up connection credentials
 	$user = "root";
-	$pass = "";
+	$pass = "root";
 	$url = "localhost";
 	$db = "db_blueray";
 	
-	//$link = mysqli_connect($url, $user, $pass, $db, "8889"); //Mac
-	$link = mysqli_connect($url, $user, $pass, $db); //PC
+	$link = mysqli_connect($url, $user, $pass, $db, "8889"); //Mac
+	//$link = mysqli_connect($url, $user, $pass, $db); //PC
 	
 	/* check connection */ 	
 	if(mysqli_connect_errno()) {
