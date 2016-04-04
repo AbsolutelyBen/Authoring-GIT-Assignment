@@ -1,117 +1,197 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/*GLOBAL CSS*/
+
+.row.full {
+  width: 85%;
+  max-width: 85%;
+  /*overflow:hidden;*/
+}
+.row.full>.column:first-child,
+.row.full>.columns:first-child { padding-left: 1em; }
+.row.full>.column:last-child,
+.row.full>.columns:last-child { padding-right: 1em; }
+
+.bottom{
+    margin-bottom:1em;
+}
+
+/*GLOBAL END*/
+
+
+
+/*GALLERY*/
+
+/*-----GALLERY------*/
+
+.gallery-socialIcons{
+  float:right;
+  padding-top:1%;
+  margin-right:0;
+}
+
+.gallery-socialIcons li{
+  list-style-type: none;
+  display:inline;
+}
+
+.halfHeight{
+    height: 50vh;
+    padding-bottom: 6px;
+}
+
+.fullHeight{
+    height:100vh;
+    padding-bottom: 6px;
+}
+
+.oneThirdHeight{
+    height:33.33vh;
+    padding-bottom: 6px;
+    width: 200%;
+}
+
+.twoThirdHeight{
+    height: 66.67vh;
+    padding-bottom: 6px;
+}
+
+.galleryContainer div{
+  margin: 0;
+  padding: 3px;
+}
+
+.columnContain{
+  object-fit: cover;
+}
+
+.revealImageSize{
+  width: 100%;
+  height: 100%;
+}
+
+.exitModalButton:hover{
+  color: #666;
+}
+
+/*GALLERY END*/
+
+
+
+
 .bgNav{
-	background-color:black;
-	padding-bottom:10px;
+  background-color:black;
+    padding-bottom:10px;
 }
 
 .filterNav{
 }
 
 .nav{
-	font-family: "Courier New", Courier, monospace;
-	font-size:20px;
-	text-align:center;
-	color:white;
-	padding-top:10px;
-	padding-bottom:30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size:20px;
+  text-align:center;
+  color:white;
+  padding-top:10px;
+  padding-bottom:30px;
 }
 
 .nav:hover{
-	color:grey;
+  color:grey;
 }
 
 h3{
-	font-family:"Courier New", Courier, monospace;
-	font-size:20px;
-	color:black;
-	font-weight:700;
-	padding-top:10px;
-	padding-bottom:30px;
+  font-family:"Courier New", Courier, monospace;
+  font-size:20px;
+  color:black;
+  font-weight:700;
+  padding-top:10px;
+  padding-bottom:30px;
 }
 
 h1{
-	font-family:'Open Sans Condensed', sans-serif;
-	font-size:80px;
-	text-align:center;
-	border:1px solid;
-	color:#FFF;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size:80px;
+  text-align:center;
+  border:1px solid;
+  color:#FFF;
 }
 
 h2{
-	font-family:'Open Sans Condensed', sans-serif;
-	font-size:40px;
-	color:black;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size:40px;
+  color:black;
 
 }
 
 #livesrch{
-	position:absolute;
-	z-index: 1;
-	background-color:white;
-	padding:20px;
+  position:absolute;
+  z-index: 1;
+  background-color:white;
+  padding:20px;
 }
 
 #srch{
-	width:100%;
+  width:100%;
 }
 
 .moviethumb{
-	width:30%;
+  width:30%;
 }
 
 .line{
-	display: inline;
+  display: inline;
 }
 
 .build-div{
-	text-align:center;
-	margin:0 auto;
+  text-align:center;
+  margin:0 auto;
 }
 
 p{
-	font-family:"Courier New", Courier, monospace;
-	font-size:15px;
-	padding-top:10px;
-	text-align:center;
+  font-family:"Courier New", Courier, monospace;
+  font-size:15px;
+  padding-top:10px;
+  text-align:center;
 }
 
 h6{
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:20px;
-	text-align:center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20px;
+  text-align:center;
 }
 
 img{
-	display:block;
-	margin:auto;
+  display:block;
+  margin:auto;
 }
 
 a{
-	color:blue;	
+  color:blue; 
 }
 
 
 .details{
-	padding-top:50px;
-	padding-bottom:50px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 .top{
-	padding-top:80px;
+  padding-top:80px;
 }
 
 .bottom{
-	padding-top:20px;
+  padding-top:20px;
 }
 
 .shrinkImg{
-	width:70%;
+  width:70%;
 }
 
 footer{
-	border-top: 1px solid #000;	
+  border-top: 1px solid #000; 
 }
 
 @media screen and (min-width:641px){
@@ -130,39 +210,6 @@ body {
   font-size: 15px;
   font-family: open-sans, Arial, san-serif;
 }
-
-.movie-poster{
-  width: 100%;
-  height: auto;
-
-  position: relative;
-  z-index: 1;
-}
-
-.movie-poster:after {
-  content: '';
-  display: table;
-  clear: both;
-  width: 100%;
-}
-
-.movie-poster .galleryImages {
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  overflow: hidden;
-  float: left;
-  position: relative;
-  z-index: 1;
-}
-
-.movie-poster .galleryImages a {
-  border: none;
-}
-
-.movie-poster .galleryImages img {
-  width: 200%;
-  height: auto;
 }
 
 
@@ -193,78 +240,93 @@ body {
   top: 0;
   left: -99999px;
   z-index: 9999;
+
   overflow: hidden;
+
   opacity: 0;
+
   -webkit-transform: scale(0.2);
   transform: scale(0.2);
 
   -webkit-transition: opacity 0.5s ease, -webkit-transform 0.2s ease;
   transition: opacity 0.5s ease, transform 0.2s ease;
+
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.pvVisible {
+.photo-viewer--visible {
   opacity: 1;
   left: 0;
+
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.pvTitle {
+.photo-viewer--title {
   width: 100%;
   height: 60px;
+
   background: rgba(0,0,0,0.75);
+
   position: absolute;
   top: 0;
   left: 0;
+
   z-index: 20;
 }
 
-.pvTitle h1 {
+.photo-viewer--title h1 {
   height: 100%;
   margin: 0;
+
   color: #FFF;
   text-align: center;
   font-size: 1.2rem;
   line-height: 60px;
 }
 
-.pvTitle .photo-viewer--close {
+.photo-viewer--title .photo-viewer--close {
   width: 40px;
   height: 40px;
   margin: 10px;
+
   background: rgba(255,255,255,0.2);
   border-radius: 40px;
+
   position: absolute;
   right: 0;
   top: 0;
+
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   line-height: 40px;
 }
 
-.pvContainer {
+.photo-viewer--container {
   position: relative;
   height: 100%;
   white-space: nowrap;
 }
 
-.currentIMG {
+.photo-viewer--current-image {
   width: 100%;
   height: 100%;
   line-height: 1px;
   display: inline-block;
   text-align: center;
   margin: 0;
+
   opacity: 0;
+
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+
   position: relative;
-  left: 0;
+    left: 0;
 }
 
-.currentIMG:before {
+.photo-viewer--current-image:before {
   content: "";
   display: inline-block;
   width: 1px;
@@ -273,7 +335,7 @@ body {
   vertical-align: middle;
 }
 
-.currentIMG img {
+.photo-viewer--current-image img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -283,38 +345,42 @@ body {
   vertical-align: middle;
 }
 
-.currentIMG.loaded {
+.photo-viewer--current-image.loaded {
   opacity: 1;
 }
 
-.pvControls {
+.photo-viewer--controls {
   width: 100%;
   height: 60px;
   padding: 0 20px;
+
   background: rgba(0,0,0,0.75);
+
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 20;
+
   color: #FFF;
   font-size: 1.0rem;
   line-height: 60px;
 }
 
-.pvControls .pvPrev {
+.photo-viewer--controls .photo-viewer--previous-image {
   width: 120px;
   float: left;
 }
 
-.pvControls .pvCount {
+.photo-viewer--controls .photo-viewer--count {
   width: calc(100% - 240px);
   float: left;
 
   text-align: center;
 }
 
-.pvControls .pvNext {
+.photo-viewer--controls .photo-viewer--next-image {
   width: 120px;
   float: right;
+
   text-align: right;
 }
