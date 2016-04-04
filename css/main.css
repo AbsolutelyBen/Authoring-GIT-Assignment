@@ -21,10 +21,7 @@
 /*GLOBAL END*/
 
 
-
 /*GALLERY*/
-
-/*-----GALLERY------*/
 
 .halfHeight{
     height: 50vh;
@@ -37,14 +34,14 @@
 }
 
 
-
 .twoThirdHeight{
+	padding-top: 6px;
     padding-bottom: 6px;
 }
 
 .galleryContainer div{
   margin: 0;
-  padding: 3px;
+  padding: 6px;
 }
 
 .columnContain{
@@ -60,14 +57,14 @@
   color: #666;
 }
 
+
+
 /*GALLERY END*/
-
-
 
 
 .bgNav{
   background-color:black;
-    padding-bottom:10px;
+  padding-bottom:10px;
 }
 
 .filterNav{
