@@ -69,9 +69,13 @@
 .filterNav{
 }
 
-.newNav{
-  text-align: center;
+.space{
+  padding-top:30px;
+  padding-bottom:30px;
+}
 
+.newNav{
+  padding-left:80px;
 }
 
 .nav{
@@ -79,8 +83,6 @@
   font-size:20px;
   text-align:center;
   color:white;
-  padding-top:10px;
-  padding-bottom:30px;
 }
 
 .nav:hover{
