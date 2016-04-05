@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*GLOBAL CSS*/
+
+.row.full {
+  width: 85%;
+  max-width: 85%;
+  /*overflow:hidden;*/
+}
+.row.full>.column:first-child,
+.row.full>.columns:first-child { padding-left: 1em; }
+.row.full>.column:last-child,
+.row.full>.columns:last-child { padding-right: 1em; }
+
+.bottom{
+    margin-bottom:1em;
+}
+
+
+
+/*GALLERY*/
+
+.halfHeight{
+    height: 50vh;
+    padding-bottom: 6px;
+}
+
+.fullHeight{
+    height:100vh;
+    padding-bottom: 6px;
+}
+
+
+.twoThirdHeight{
+	padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.galleryContainer div{
+  margin: 0;
+  padding: 6px;
+}
+
+.columnContain{
+  object-fit: cover;
+}
+
+.revealImageSize{
+  width: 100%;
+  height: 100%;
+}
+
+.exitModalButton:hover{
+  color: #666;
+}
+
+
+
+
+/*THE REST*/
+
+
+.bgNav{
+  background-color:black;
+  padding-bottom:10px;
+}
+
+.filterNav{
+}
+
+.space{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.newNav{
+  padding-left:80px;
+}
+
+.nav{
+  font-family: "Courier New", Courier, monospace;
+  font-size:20px;
+  text-align:center;
+  color:white;
+}
+
+.nav:hover{
+  color:grey;
+}
+
+h3{
+  font-family:"Courier New", Courier, monospace;
+  font-size:20px;
+  color:black;
+  font-weight:700;
+  padding-top:10px;
+  padding-bottom:30px;
+}
+
+h1{
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size:80px;
+  text-align:center;
+  border:1px solid;
+  color:#FFF;
+}
+
+h2{
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size:40px;
+  color:black;
+  text-align:center;
+
+}
+
+#livesrch{
+  position:absolute;
+  z-index: 1;
+  background-color:white;
+  padding:20px;
+}
+
+#srch{
+  width:100%;
+  margin:0 auto;
+}
+
+.moviethumb{
+  width:30%;
+}
+
+.line{
+  display: inline;
+}
+
+.build-div{
+  text-align:center;
+  margin:0 auto;
+}
+
+p{
+  font-family:"Courier New", Courier, monospace;
+  font-size:15px;
+  padding-top:10px;
+  text-align:center;
+}
+
+h6{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20px;
+  text-align:center;
+}
+
+img{
+  display:block;
+  margin:auto;
+}
+
+a{
+  color:blue; 
+}
+
+
+.details{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.top{
+  padding-top:80px;
+}
+
+.bottom{
+  padding-top:20px;
+}
+
+.shrinkImg{
+  width:70%;
+}
+
+footer{
+  border-top: 1px solid #000; 
+}
+
+@media screen and (min-width:641px){
+
+}
+
+@media screen and (min-width:1025px){
+
+}
+
